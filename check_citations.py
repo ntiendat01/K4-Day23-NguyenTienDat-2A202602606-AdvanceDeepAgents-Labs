@@ -32,7 +32,70 @@ def check(report_text, sources):
           (a line bundling several sources under one number is a problem)
       return problems
     """
-    raise NotImplementedError("TODO: implement check()")
+    import re
+    problems = []
+    if not sources:
+        return ["no sources in sources.json"]
+    
+    urls = set()
+    source_ns = {}
+    for src in sources:
+        n = src.get("n")
+        url = src.get("url", "")
+        if not isinstance(n, int):
+            problems.append(f"source missing or invalid 'n': {src}")
+        if not (url.startswith("http://") or url.startswith("https://")):
+            problems.append(f"source [{n}] has invalid url: {url}")
+        if url in urls:
+            problems.append(f"duplicate url in sources.json: {url}")
+        urls.add(url)
+        source_ns[n] = src
+        
+    parts = report_text.split("## References")
+    if len(parts) < 2:
+        problems.append("missing '## References' heading")
+        return problems
+        
+    body = parts[0]
+    references = parts[1]
+    
+    cited_matches = re.findall(r'\[(\d+)\]', body)
+    cited = set(int(n) for n in cited_matches)
+    
+    for n in cited:
+        if n not in source_ns:
+            problems.append(f"[{n}] cited but missing from sources.json")
+            
+    for n in source_ns:
+        if n not in cited:
+            problems.append(f"source [{n}] never cited")
+            
+    ref_lines = [line.strip() for line in references.split('\n') if re.match(r'^\[\d+\]', line.strip())]
+    ref_numbers = []
+    
+    for line in ref_lines:
+        match = re.match(r'^\[(\d+)\]', line)
+        if match:
+            n = int(match.group(1))
+            ref_numbers.append(n)
+            
+            if n not in source_ns:
+                problems.append(f"reference line for [{n}] but not in sources.json")
+                
+            urls_in_line = re.findall(r'https?://[^\s\]\)]+', line)
+            if len(urls_in_line) != 1:
+                problems.append(f"reference line [{n}] has {len(urls_in_line)} urls, expected exactly 1 (e.g. bundled sources)")
+            elif n in source_ns and urls_in_line[0] != source_ns[n].get("url"):
+                problems.append(f"reference line [{n}] url mismatch: {urls_in_line[0]} != {source_ns[n].get('url')}")
+                
+    if len(ref_numbers) != len(set(ref_numbers)):
+        problems.append("duplicate source numbers in references list")
+        
+    for n in source_ns:
+        if n not in ref_numbers:
+            problems.append(f"source [{n}] is missing a reference line")
+            
+    return problems
 
 
 def main(argv):

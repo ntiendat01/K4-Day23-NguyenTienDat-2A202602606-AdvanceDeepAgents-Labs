@@ -1,0 +1,194 @@
+[
+  {
+    "n": 1,
+    "id": "ha2018world",
+    "url": "https://arxiv.org/abs/1803.10122",
+    "title": "World Models",
+    "date": "2018-03",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "hafner2023dreamerv3",
+    "url": "https://arxiv.org/abs/2301.04104",
+    "title": "Mastering Diverse Domains through World Models",
+    "date": "2023-01",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "hafner2019dreamerv1",
+    "url": "https://arxiv.org/abs/1912.01603",
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "date": "2019-12",
+    "source": "arxiv"
+  },
+  {
+    "n": 4,
+    "id": "hafner2025nature",
+    "url": "https://www.nature.com/articles/s41586-025-08744-2",
+    "title": "Mastering Diverse Domains through World Models (Nature)",
+    "date": "2025-02",
+    "source": "web"
+  },
+  {
+    "n": 5,
+    "id": "hafner2020dreamerv2",
+    "url": "https://arxiv.org/abs/2010.02193",
+    "title": "Mastering Atari with Discrete World Models",
+    "date": "2020-10",
+    "source": "arxiv"
+  },
+  {
+    "n": 6,
+    "id": "openai2024sora",
+    "url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+    "title": "Video Generation Models as World Simulators",
+    "date": "2024-02",
+    "source": "web"
+  },
+  {
+    "n": 7,
+    "id": "opensora2025",
+    "url": "https://huggingface.co/papers/2503.09642",
+    "title": "Open-Sora 2.0: Democratizing Efficient Spatial-Temporal Diffusion Transformers",
+    "date": "2025-03",
+    "source": "hf-search"
+  },
+  {
+    "n": 8,
+    "id": "deepmind2025genie3",
+    "url": "https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/",
+    "title": "Genie 3: A New Frontier for World Models",
+    "date": "2025-04",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "diamond2024",
+    "url": "https://huggingface.co/papers/2405.12399",
+    "title": "DIAMOND: Diffusion World Models as General RL Agents",
+    "date": "2024-05",
+    "source": "hf-search"
+  },
+  {
+    "n": 10,
+    "id": "dreamtrue2026",
+    "url": "https://huggingface.co/papers/2610.12468",
+    "title": "DreamTrue: Action-Faithful Multi-View Robot World Models",
+    "date": "2026-10",
+    "source": "hf-search"
+  },
+  {
+    "n": 11,
+    "id": "worldlens",
+    "url": "https://worldbench.github.io/assets_common/papers/worldlens.pdf",
+    "title": "WorldLens: Full-Spectrum Evaluation Benchmark for Driving World Models",
+    "date": "2024-12",
+    "source": "web"
+  },
+  {
+    "n": 12,
+    "id": "drivinggen",
+    "url": "https://huggingface.co/papers/2601.01528",
+    "title": "DrivingGen: Generative Video World Models in Autonomous Driving",
+    "date": "2026-01",
+    "source": "hf-search"
+  },
+  {
+    "n": 13,
+    "id": "actbench",
+    "url": "https://huggingface.co/papers/2412.05337",
+    "title": "ACT-Bench: Assessing Action Fidelity in World Models",
+    "date": "2024-12",
+    "source": "hf-search"
+  },
+  {
+    "n": 14,
+    "id": "nuplan",
+    "url": "https://huggingface.co/papers/2106.11810",
+    "title": "NuPlan: A Closed-Loop ML Planning Benchmark for Autonomous Vehicles",
+    "date": "2021-06",
+    "source": "hf-search"
+  },
+  {
+    "n": 15,
+    "id": "mirabench",
+    "url": "https://arxiv.org/html/2605.29360",
+    "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models",
+    "date": "2026-05",
+    "source": "arxiv"
+  },
+  {
+    "n": 16,
+    "id": "worldbench",
+    "url": "https://arxiv.org/html/2601.21282v1",
+    "title": "WorldBench: Disentangled Evaluation of Physical Understanding in Video Generation",
+    "date": "2026-01",
+    "source": "arxiv"
+  },
+  {
+    "n": 17,
+    "id": "worldarena2",
+    "url": "https://huggingface.co/papers/2605.17912",
+    "title": "WorldArena 2.0: Benchmarking Embodied World Models on Modality and Functionality",
+    "date": "2026-05",
+    "source": "hf-search"
+  },
+  {
+    "n": 18,
+    "id": "worldreasoning",
+    "url": "https://huggingface.co/papers/2603.25887",
+    "title": "World Reasoning Arena: Simulative Reasoning and Long-Horizon Forecasting",
+    "date": "2026-03",
+    "source": "hf-search"
+  },
+  {
+    "n": 19,
+    "id": "worldmodelbench",
+    "url": "https://huggingface.co/papers/2502.20694",
+    "title": "WorldModelBench: Instruction-Following and Physics-Adherence Evaluation",
+    "date": "2025-02",
+    "source": "hf-search"
+  },
+  {
+    "n": 20,
+    "id": "acm_survey",
+    "url": "https://dl.acm.org/doi/10.1145/3746449",
+    "title": "A Comprehensive Survey of World Models for Autonomous Driving and Embodied AI",
+    "date": "2025-01",
+    "source": "web"
+  },
+  {
+    "n": 21,
+    "id": "driving_survey",
+    "url": "https://arxiv.org/html/2501.11260v4",
+    "title": "Survey of World Models for Autonomous Driving",
+    "date": "2025-01",
+    "source": "arxiv"
+  },
+  {
+    "n": 22,
+    "id": "embodied_survey",
+    "url": "https://www.arxiv.org/pdf/2510.16732",
+    "title": "Comprehensive Survey on World Models for Embodied AI",
+    "date": "2025-10",
+    "source": "web"
+  },
+  {
+    "n": 23,
+    "id": "ikce_paper",
+    "url": "https://arxiv.org/abs/2607.05966",
+    "title": "Imagined Rollouts Are Kinematic, Not Dynamic",
+    "date": "2026-07",
+    "source": "arxiv"
+  },
+  {
+    "n": 24,
+    "id": "hallucination_paper",
+    "url": "https://arxiv.org/html/2606.27326",
+    "title": "Hallucination in World Models is Predictable and Preventable",
+    "date": "2026-06",
+    "source": "arxiv"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "n": 1,
+    "id": "arXiv:2405.10674",
+    "url": "https://arxiv.org/abs/2405.10674",
+    "title": "From Sora What We Can See: A Survey of Text-to-Video Generation",
+    "date": "2024-05-17",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2505.04921",
+    "url": "https://arxiv.org/abs/2505.04921",
+    "title": "Perception, Reason, Think, and Plan: A Survey on Large Multimodal Reasoning Models",
+    "date": "2025-05-08",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "2403.16407",
+    "url": "https://arxiv.org/html/2403.16407v1",
+    "title": "A Survey on Long Video Generation: Challenges, Methods...",
+    "date": "2024-03-24",
+    "source": "hf-search"
+  },
+  {
+    "n": 4,
+    "id": "2506.09344",
+    "url": "https://huggingface.co/papers/2506.09344",
+    "title": "Ming-Omni: A Unified Multimodal Model for Perception and Generation",
+    "date": "2025-06-11",
+    "source": "hf-search"
+  },
+  {
+    "n": 5,
+    "id": "2025.findings-acl.453",
+    "url": "https://aclanthology.org/anthology-files/pdf/findings/2025.findings-acl.453.pdf",
+    "title": "From Specific-MLLMs to Omni-MLLMs: A Survey on MLLMs Aligned with Multi-modalities",
+    "date": "2025",
+    "source": "web"
+  },
+  {
+    "n": 6,
+    "id": "arXiv:2410.05227",
+    "url": "https://arxiv.org/abs/2410.05227",
+    "title": "The Dawn of Video Generation: Preliminary Explorations with SORA-like Models",
+    "date": "2024-10-10",
+    "source": "arxiv"
+  },
+  {
+    "n": 7,
+    "id": "AIPlus20260001",
+    "url": "https://www.elspub.com/doi/10.55092/aiplus20260001",
+    "title": "A survey on omni-modal language models",
+    "date": "2025-11-06",
+    "source": "web"
+  },
+  {
+    "n": 8,
+    "id": "2411.13503",
+    "url": "https://huggingface.co/papers/2411.13503",
+    "title": "VBench++: Comprehensive and Versatile Benchmark Suite for Video Generative Models",
+    "date": "2024-11-20",
+    "source": "hf-search"
+  },
+  {
+    "n": 9,
+    "id": "CVPRW2026",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026W/VGBE/papers/Safavigerdini_Generative_AI_Video_Evaluation_Survey_of_Metrics_Benchmarks_and_Trustworthiness_CVPRW_2026_paper.pdf",
+    "title": "Generative AI Video Evaluation: Survey of Metrics, Benchmarks, and Trustworthiness",
+    "date": "2026",
+    "source": "web"
+  },
+  {
+    "n": 10,
+    "id": "2610.00812",
+    "url": "https://arxiv.org/html/2610.00812",
+    "title": "Video Generation Models: A Survey of Post-Training and Alignment",
+    "date": "2026-09-30",
+    "source": "hf-search"
+  }
+]

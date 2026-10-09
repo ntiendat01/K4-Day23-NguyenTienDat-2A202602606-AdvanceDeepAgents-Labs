@@ -1,0 +1,160 @@
+[
+  {
+    "id": "arxiv:2609.36816",
+    "url": "https://arxiv.org/abs/2609.36816",
+    "title": "Towards Better Training Signal: Advantage Clipped Policy Optimization",
+    "date": "2026-09-29",
+    "source": "arxiv",
+    "snippet": "Reinforcement learning (RL) has become a cornerstone for improving the reasoning capabilities of large language models (LLMs), but the need for on-policy data substantially limits training efficiency. Reusing off-policy data through importance sampling (IS) can improve efficiency but introduce considerable instability. Hence, algorithms such as PPO and GRPO widely adopt IS-ratio clipping to stabilize training. However, training stability and gradient estimate are mainly determined by the product of IS ratio and advantage. To further stabilize training, we propose ACPO, which clips the product.",
+    "claim": "PPO and GRPO utilize importance sampling ratio clipping to stabilize reasoning training, though alternative clipping variants like ACPO are proposed to better stabilize training dynamics.",
+    "n": 1
+  },
+  {
+    "id": "acm:10.1145/3834858",
+    "url": "https://dl.acm.org/doi/full/10.1145/3834858",
+    "title": "A Technical Survey of Reinforcement Learning Techniques for Large Language Models",
+    "date": "2026-09-29",
+    "source": "web",
+    "snippet": "Reinforcement Learning (RL) has emerged as a transformative approach for aligning and enhancing Large Language Models (LLMs)... prominent algorithms such as Proximal Policy Optimization (PPO), Q-Learning, and Actor–Critic methods... advanced strategies such as Direct Preference Optimization (DPO) and Group Relative Policy Optimization (GRPO)... outcome-based RL such as Reinforcement Learning with Verifiable Rewards (RLVR) significantly improves stepwise reasoning.",
+    "claim": "RL for LLM reasoning relies heavily on policy gradient and preference methods like PPO, GRPO, DPO, and RLVR to optimize multi-step logic and mitigate reward hacking.",
+    "n": 2
+  },
+  {
+    "id": "huggingface:zadorozhny-guide",
+    "url": "https://huggingface.co/blog/karina-zadorozhny/guide-to-llm-post-training-algorithms",
+    "date": "2026-01-19",
+    "source": "web",
+    "snippet": "PPO uses Generalized Advantage Estimation (GAE) for computing advantage values, an actor-critic interplay, and clipped updates. GRPO samples responses for a given prompt and uses the mean score of the group as the baseline: A_i = (R_i - mean) / std. DPO extracts the optimal reward directly from preference data without a separate reward model.",
+    "claim": "PPO uses GAE and a value network for advantage estimation, GRPO uses group score normalization without a value network, and DPO optimizes policies directly from pairwise preferences.",
+    "n": 3
+  },
+  {
+    "id": "raschka:2025-llm-reasoning",
+    "url": "https://magazine.sebastianraschka.com/p/the-state-of-llm-reasoning-model-training",
+    "date": "2025-04-19",
+    "source": "web",
+    "snippet": "The efficiency improvements [of GRPO over PPO] are achieved by dropping the 'critic' (value model)... GRPO takes a simpler approach: it samples multiple answers from the policy model itself and uses their relative quality to compute the advantages... DeepSeek-R1 team used verifiable rewards. This approach is called reinforcement learning with verifiable rewards (RLVR).",
+    "claim": "GRPO eliminates the critic network required by PPO by sampling multiple group outputs and computing relative group advantages, which pairs effectively with rule-based RLVR.",
+    "n": 4
+  },
+  {
+    "id": "arxiv:2509.06733v2",
+    "url": "https://arxiv.org/html/2509.06733v2",
+    "title": "Reinforcement Learning Foundations for Deep Research",
+    "date": "2025-11-05",
+    "source": "arxiv",
+    "snippet": "Many pipelines combine an outcome reward (i.e., final answer correctness) with a small format reward to encourage well-formed traces... Optimization is typically PPO or GRPO with KL regularization to a reference policy... Studies that compare both generally find that GRPO has simpler mechanics and converges with fewer updates, whereas PPO tends to provide greater training stability under noisy, long-horizon returns.",
+    "claim": "PPO and GRPO are the dominant online optimizers for reasoning models, with GRPO offering simpler execution and fewer parameters by omitting the value critic, while PPO provides robust stability for long horizons.",
+    "n": 5
+  },
+  {
+    "id": "arxiv:2602.09305v2",
+    "url": "https://arxiv.org/html/2602.09305v2",
+    "title": "Reward Modeling for Reinforcement Learning-Based LLM",
+    "date": "2026-02-09",
+    "source": "arxiv",
+    "snippet": "Based on the sparsity of reward signals, parameterized reward models are commonly classified into two categories: outcome reward models (ORMs) that assign a reward at the final answer, and process reward models (PRMs) which provide fine-grained intermediate rewards during the reasoning process... Implicit reward shaping offers a foundation for enriching rule-based rewards with dense signals via DPO.",
+    "claim": "Reward modeling for reasoning spans Outcome Reward Models (ORMs) for final answer correctness and Process Reward Models (PRMs) for step-by-step logical verification, alongside implicit rewards derived from preference optimization.",
+    "n": 6
+  },
+  {
+    "id": "2410.05229",
+    "url": "https://huggingface.co/papers/2410.05229",
+    "title": "GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models",
+    "date": "2024-10-07",
+    "source": "hf-search",
+    "snippet": "LSSMs exhibit variability and fragility in mathematical reasoning, as evidenced by performance declines on GSM-Symbolic benchmark questions with altered numerical values and additional clauses.",
+    "claim": "Evaluation challenges include brittleness and fragility when numerical values or contextual clauses are altered, as revealed by benchmarks like GSM-Symbolic.",
+    "n": 7
+  },
+  {
+    "id": "2405.00332",
+    "url": "https://huggingface.co/papers/2405.00332",
+    "title": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+    "date": "2024-05-01",
+    "source": "hf-search",
+    "snippet": "Evaluation of large language models on a new math benchmark, GSM1k, reveals that many models exhibit signs of overfitting to the existing GSM8k benchmark, leading to performance drops on GSM1k.",
+    "claim": "Overfitting to traditional benchmarks like GSM8K is a major evaluation challenge, which new evaluation datasets like GSM1k help uncover.",
+    "n": 8
+  },
+  {
+    "id": "s-grpo-2025",
+    "url": "https://exa.ai/library/publication/d76nrq7ygtn",
+    "title": "S-GRPO: Early Exit via Reinforcement Learning in Reasoning Models",
+    "date": "2025-05-12",
+    "source": "web",
+    "snippet": "To comprehensively assess models' capabilities across a range of reasoning tasks, we select five popular benchmarks: GSM8K, AIME 2024, AMC 2023, MATH-500, and GPQA Diamond.",
+    "claim": "Standard evaluation suites for assessing multi-step mathematical and scientific reasoning in RL-trained models include GSM8K, AIME 2024, AMC 2023, MATH-500, and GPQA Diamond.",
+    "n": 9
+  },
+  {
+    "id": "resrl-2026",
+    "url": "https://arxiv.org/html/2605.00380",
+    "title": "ResRL: Boosting LLM Reasoning via Negative Sample Projection Residual Reinforcement Learning",
+    "date": "2026-05-26",
+    "source": "arxiv",
+    "snippet": "We evaluate ResRL on twelve benchmarks spanning Mathematical reasoning, Code generation, Agent Tasks, and Function Calling (e.g., AIME24, AIME25, AMC23, MATH-500, Minerva, Olympiad, LiveCodeBench, CodeForces, HumanEval+).",
+    "claim": "Reasoning generalization and robustness are evaluated across diverse categories including advanced mathematics, competitive programming (CodeForces, LiveCodeBench), and agent/function-calling tasks.",
+    "n": 10
+  },
+  {
+    "id": "grpo-lambda-2025",
+    "url": "https://arxiv.org/pdf/2505.18086",
+    "title": "GRPO-λ: An Efficient and Stabilized Variant of GRPO",
+    "date": "2025-05-18",
+    "source": "arxiv",
+    "snippet": "Experimental results on GSM8k, GPQA, MATH-500, AMC 2023, and AIME 2024 benchmarks demonstrate the dual benefit of avoiding training collapse while evaluating length-accuracy trade-offs.",
+    "claim": "Length penalties and efficiency constraints in RL training introduce training instability and accuracy collapse if CoT sequence reduction is overly aggressive.",
+    "n": 11
+  },
+  {
+    "id": "varmath-2025",
+    "url": "https://arxiv.org/pdf/2507.12885",
+    "title": "VAR-MATH: A Symbolic Evaluation Framework",
+    "date": "2025-07-12",
+    "source": "arxiv",
+    "snippet": "Experimental results show substantial performance drops for RL-trained models on these variabilized benchmarks, with average declines of 47.9% on AMC23, 58.8% on AIME24, and 72.9% on AIME25.",
+    "claim": "Data contamination and evaluation instability on single-instance benchmarks mask a lack of true symbolic generalization; variabilized benchmarks reveal heavy performance drops in RL models.",
+    "n": 12
+  },
+  {
+    "id": "arxiv:2412.09078",
+    "url": "https://arxiv.org/abs/2412.09078",
+    "title": "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+    "date": "2024-12-12",
+    "source": "arxiv",
+    "snippet": "Forest-of-Thought (FoT) integrates multiple reasoning trees (such as Tree-of-Thought or MCTSr) to leverage collective decision-making for complex logical reasoning tasks. By utilizing sparse activation strategies, it selects the most relevant reasoning paths for each tree, improving efficiency and accuracy. It introduces dynamic self-correction and consensus-guided decision making to scale test-time compute.",
+    "claim": "Combining multiple reasoning trees with sparse activation and dynamic self-correction establishes a predictable scaling law where increasing the number of activated subtrees improves reasoning accuracy.",
+    "n": 13
+  },
+  {
+    "id": "arxiv:2501.11651",
+    "url": "https://arxiv.org/abs/2501.11651",
+    "title": "T1: Scaling RL by Encouraging Exploration and Understanding Inference Scaling",
+    "date": "2025-01-20",
+    "source": "arxiv",
+    "snippet": "T1 explores key factors for scaling reinforcement learning and enabling test-time scaling behavior in LLM reasoning. It initializes policies using synthesized chain-of-thought data integrating trial-and-error and self-verification, scales RL via hard sampling and response entropy bonuses, and shows that increased RL training compute activates inference scaling (longer thinking leading to better performance).",
+    "claim": "Scaled reinforcement learning with extensive exploration and trial-and-error training directly unlocks and enhances the test-time inference scaling behavior of LLMs, where longer reasoning paths lead to significantly higher accuracy.",
+    "n": 14
+  },
+  {
+    "id": "hf:2506.11902",
+    "url": "https://huggingface.co/papers/2506.11902",
+    "title": "TreeRL: LLM Reinforcement Learning with On-Policy Tree Search",
+    "date": "2025-06-11",
+    "source": "hf-daily",
+    "snippet": "TreeRL proposes an efficient token-level entropy-guided tree search strategy (EPTree) that forks branches from the most uncertain intermediate tokens. It integrates tree search into reinforcement learning with on-policy process supervision to provide fine-grained supervision signals and improve reasoning performance.",
+    "claim": "Integrating on-policy token-level uncertainty tree search (EPTree) with reinforcement learning provides effective process supervision and generates more diverse, higher-quality reasoning responses under the same inference budget.",
+    "n": 15
+  },
+  {
+    "id": "hf:2503.04412",
+    "url": "https://huggingface.co/papers/2503.04412",
+    "title": "Wider or Deeper? Scaling LLM Inference-Time Compute with Adaptive Branching Tree Search",
+    "date": "2025-03-04",
+    "source": "hf-daily",
+    "snippet": "Adaptive Branching Monte Carlo Tree Search (AB-MCTS) generalizes repeated sampling with principled multi-turn exploration and exploitation. At each node, AB-MCTS dynamically decides whether to 'go wider' by expanding new candidate responses or 'go deeper' by refining existing ones based on external feedback using Bayesian posterior updates.",
+    "claim": "Adaptive Branching MCTS outperforms standard MCTS and repeated sampling by dynamically balancing going wider and going deeper based on feedback, achieving superior test-time compute scaling.",
+    "n": 16
+  }
+]

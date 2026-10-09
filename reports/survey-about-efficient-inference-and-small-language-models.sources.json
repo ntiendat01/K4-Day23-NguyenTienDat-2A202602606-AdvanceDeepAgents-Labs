@@ -1,0 +1,90 @@
+[
+  {
+    "n": 1,
+    "id": "arxiv-2410.20011",
+    "url": "https://arxiv.org/abs/2410.20011",
+    "title": "A Survey of Small Language Models",
+    "date": "2024-10-25",
+    "source": "arxiv"
+  },
+  {
+    "n": 2,
+    "id": "2404.14294",
+    "url": "https://arxiv.org/abs/2404.14294",
+    "title": "A Survey on Efficient Inference for Large Language Models",
+    "date": "2024-04-22",
+    "source": "arxiv"
+  },
+  {
+    "n": 3,
+    "id": "aclanthology-2025.ranlp-1.93",
+    "url": "https://aclanthology.org/2025.ranlp-1.93/",
+    "title": "A Survey on Small Language Models",
+    "date": "2025-01-01",
+    "source": "web"
+  },
+  {
+    "n": 4,
+    "id": "acm-3768165",
+    "url": "https://dl.acm.org/doi/10.1145/3768165",
+    "title": "A Comprehensive Survey of Small Language Models in the Era of Large Language Models",
+    "date": "2025-11-24",
+    "source": "web"
+  },
+  {
+    "n": 5,
+    "id": "hf-2407.14679",
+    "url": "https://huggingface.co/papers/2407.14679",
+    "title": "Compact Language Models via Pruning and Knowledge Distillation",
+    "date": "2024-07-19",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "2603.14989",
+    "url": "https://huggingface.co/papers/2603.14989",
+    "title": "Efficient LLM Inference: A Survey and Data-Movement Framework",
+    "date": "2026-03-19",
+    "source": "hf-search"
+  },
+  {
+    "n": 7,
+    "id": "r4nlm2lc7t2",
+    "url": "https://exa.ai/library/publication/r4nlm2lc7t2",
+    "title": "I/O for LLM Inference: A Survey of Storage and Memory Bottlenecks",
+    "date": "2026-03-19",
+    "source": "web"
+  },
+  {
+    "n": 8,
+    "id": "github-vllm",
+    "url": "https://github.com/vllm-project/vllm/",
+    "title": "vllm-project/vllm: A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "date": "2023-02-09",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "nvidia-tensorrt-llm",
+    "url": "https://developer.nvidia.com/tensorrt-llm",
+    "title": "NVIDIA TensorRT LLM",
+    "date": "N/A",
+    "source": "web"
+  },
+  {
+    "n": 10,
+    "id": "huggingface-tgi-overview",
+    "url": "https://huggingface.co/docs/text-generation-inference/main/conceptual/chunking",
+    "title": "Text Generation Inference (TGI) v3 overview",
+    "date": "N/A",
+    "source": "web"
+  },
+  {
+    "n": 11,
+    "id": "huggingface-tgi-backends",
+    "url": "https://huggingface.co/docs/text-generation-inference/main/en/multi_backend_support",
+    "title": "Multi-backend support · Hugging Face",
+    "date": "N/A",
+    "source": "web"
+  }
+]
